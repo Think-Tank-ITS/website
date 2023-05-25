@@ -1,21 +1,21 @@
 # Think Tank - Website 
 
 
-## Clone Repository 
+**Clone Repository** 
 
 ```
 $ git clone https://github.com/Think-Tank-ITS/website.git
 $ cd website
 ```
 
-## Install Dependencies
+**Install Dependencies**
 
 ```
 $ npm install -f pnpm (if you haven't installed pnpm)
 $ pnpm install
 ```
 
-## Run Project
+**Run Project**
 
 ```
 $ pnpm run dev

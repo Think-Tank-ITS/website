@@ -28,7 +28,7 @@ $ pnpm run dev
 # open the site at http://127.0.0.1:3000
 
 $ npm run start (windows)
-#  Local    http://localhost:3000/
+# Local    http://localhost:3000/
 ```
 
 

@@ -1,42 +1,18 @@
----
-const featuresData = [
-  {title: 'Zero JavaScript Runtime', body: ' Astro renders HTML on the server and strips away any remaining, unused JavaScript.'},
-  {title: 'The Power of Islands', body: ' Need interactive UI? Load individual, non-blocking component islands in parallel.'},
-  {title: 'Lazy-Loading Islands', body: 'Components only hydrate when they scroll into view. If you don\'t see it, Astro won\'t load it.'}
-];
----
-
 <!-- Card -->
-<div
-class="flex flex-col rounded-lg shadow-sm bg-white overflow-hidden dark:text-gray-100 dark:bg-gray-800"
->
-<!-- Body -->
-<div class="p-5 grow flex justify-between items-center">
-  <dl class="space-y-1">
-    <dt class="text-2xl font-bold">MOBILE</dt>
-    <dd
-      class="uppercase font-semibold text-sm text-gray-500 tracking-wider dark:text-gray-400"
-    >
-      Kotlin
-    </dd>
-  </dl>
-  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-kotlin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-    <path d="M20 20h-16v-16h16"></path>
-    <path d="M4 20l16 -16"></path>
-    <path d="M4 12l8 -8"></path>
-    <path d="M12 12l8 8"></path>
- </svg>
-</div>
-<!-- END Body -->
-
-<!-- Action Link -->
-<a
-  href="javascript:void(0)"
-  class="block p-3 font-medium text-sm text-center bg-gray-50 hover:bg-gray-100 hover:bg-opacity-75 active:bg-gray-50 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:bg-gray-900/50 dark:hover:text-blue-300 dark:hover:bg-gray-900/75 dark:active:bg-gray-900/50"
->
-  Selengkapnya
+<a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800" href="#">
+  <div class="p-4 md:p-5">
+    <div class="flex justify-between items-center">
+      <div>
+        <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
+          FRONTEND
+        </h3>        
+      </div>
+      <div class="pl-3">
+        <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
 </a>
-<!-- END Action Link -->
-</div>
-<!-- END Card -->
+<!-- End Card -->

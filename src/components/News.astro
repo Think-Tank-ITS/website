@@ -1,0 +1,74 @@
+---
+const items = Array.from({ length: 8 });
+---
+
+<div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <!-- Title -->
+    <div class="mb-10 flex flex-col items-start">
+        <h2
+            class="text-2xl font-bold dark:text-white md:text-4xl md:leading-tight"
+        >
+            Berita Terbaru
+        </h2>
+        <p class="mt-1 max-w-2xl text-gray-600 dark:text-gray-400">
+            Temukan berita terbaru Lorem ipsum dolor sit amet consectetur.
+        </p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 mb-10 lg:mb-14">
+        {
+            items.map((_, index) => (
+                <a
+                    class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    href=""
+                >
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img
+                            class="w-full h-[12rem] object-cover rounded-t-xl"
+                            src="https://preline.co/docs/assets/img/500x300/img1.jpg"
+                            alt="Image Description"
+                        />
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <p class="mt-2 text-xs uppercase text-gray-600 dark:text-gray-400">
+                            Lorem
+                        </p>
+                        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </h3>
+                    </div>
+                </a>
+            ))
+        }
+    </div>
+    <!-- End Grid -->
+
+    <!-- Card -->
+    <div class="mt-12 text-center">
+        <a
+            class="inline-flex justify-center items-center gap-x-2 text-center bg-white border hover:border-gray-300 text-sm text-blue-600 hover:text-blue-700 font-medium hover:shadow-sm rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:bg-slate-900 dark:border-gray-700 dark:hover:border-gray-600 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:shadow-slate-700/[.7] dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+            href="#"
+        >
+            Berita lainnya
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3.5 h-3.5"
+                viewBox="0 0 14 14"
+                ><g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="m11 9l2-.5l.5 2"></path><path
+                        d="M13 8.5A6.76 6.76 0 0 1 7 13h0a6 6 0 0 1-5.64-3.95M3 5l-2 .5l-.5-2"
+                    ></path><path
+                        d="M1 5.5C1.84 3.2 4.42 1 7 1h0a6 6 0 0 1 5.64 4"
+                    ></path></g
+                ></svg
+            >
+        </a>
+    </div>
+    <!-- End Card -->
+</div>

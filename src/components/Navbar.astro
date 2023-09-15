@@ -1,9 +1,10 @@
 <!-- Navbar -->
 <section
-    id="navbar"
+    id="top"
     class="flex flex-col sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-900 dark:border-gray-800"
 >
     <nav
+        x-data="{ currentPath: window.location.pathname }"
         class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 xl:px-0"
         aria-label="Global"
     >
@@ -55,20 +56,24 @@
                 class="flex flex-col gap-y-4 gap-x-0 my-5 sm:my-0 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7"
             >
                 <a
-                    class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400"
-                    href="#navbar">Teras</a
+                    :class="currentPath === '/' ? 'text-blue-500 hover:text-blue-400' : 'text-gray-500 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-400'"
+                    class="font-medium sm:py-6"
+                    href="/">Beranda</a
                 >
                 <a
-                    class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400"
-                    href="#resources">Sumber Belajar</a
+                    :class="currentPath === '/resources' ? 'text-blue-500 hover:text-blue-400' : 'text-gray-500 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-400'"
+                    class="font-medium sm:py-6"
+                    href="/resources">Sumber Belajar</a
                 >
                 <a
-                    class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400"
-                    href="#">Projects</a
+                    :class="currentPath === '/news' ? 'text-blue-500 hover:text-blue-400' : 'text-gray-500 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-400'"
+                    class="font-medium sm:py-6"
+                    href="/news">Berita</a
                 >
                 <a
-                    class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400"
-                    href="#">Blog</a
+                    :class="currentPath === '/about' ? 'text-blue-500 hover:text-blue-400' : 'text-gray-500 hover:text-gray-400 dark:text-gray-200 dark:hover:text-gray-400'"
+                    class="font-medium sm:py-6"
+                    href="/about">Tentang</a
                 >
             </div>
         </div>
